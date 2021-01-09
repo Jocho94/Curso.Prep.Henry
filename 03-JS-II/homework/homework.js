@@ -5,10 +5,9 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x<y){return x;}
-  else {return y;}
+  if (x<y) {return y;}
+  else {return x;}
 }
-obtenerMayor(4,5)
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -17,10 +16,10 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === "aleman"){return "Guten Tag";}
-  else if(idioma === "mandarin"){return "Ni Hao";}
-  else if(idioma === "ingles") {return "Hello";}
-  else "hola";
+  if (idioma === "aleman"){return "Guten Tag!";}
+  else if(idioma === "mandarin"){return "Ni Hao!";}
+  else if(idioma === "ingles") {return "Hello!";}
+  else return "Hola!";
 }
 
 function esDiezOCinco(numero) {
@@ -56,9 +55,9 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero%3 ===0) {return "fizz";}
-  else if(numero%5===0){return "buzz;"}
-  else if(numero%5===0 && numero%3===0){return "fizzbuzz";}
+  if(numero%5===0 && numero%3===0){return "fizzbuzz";}
+  else if(numero%3 ===0) {return "fizz";}
+  else if(numero%5===0){return "buzz";}
   else return numero
 }
 
@@ -72,9 +71,10 @@ function esPrimo(numero) {
   if(numero === 2) return true;  
   for(var i = 2; i < numero; i++) {    
     if(numero % i === 0) {      
-      return false;    }  }  
-      return true;
-}
+      return false;    } 
+    else return true }
+  
+} 
 
 
 
